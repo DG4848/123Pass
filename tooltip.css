@@ -1,0 +1,14 @@
+.tooltip123Pass-container {
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tooltip123Pass-container button {
+    margin-left: 10px;
+}

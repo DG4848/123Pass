@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123Pass Setup</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="global.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="popup-header">
+            123Pass Setup
+        </div>
+
+        <div class="popup-content">
+            <div class="input-container password-wrapper">
+                <label for="master-passphrase">Master Passphrase:</label>
+                <input type="password" id="master-passphrase" name="master-passphrase" class="text-input"
+                       placeholder="**********************" required title="Enter your master passphrase here" autocomplete="new-password" />
+                <span class="toggle-password" title="Show/Hide Password">&#x1F441;</span>
+            </div>
+
+            <div class="input-container">
+                <label for="save-to-file">Allow storage?</label>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="save-to-file" name="save-to-file" class="checkbox-hidden" checked />
+                    <label for="save-to-file" class="checkbox-label"></label>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="pathway">Pathway:</label>
+                <input type="text" id="pathway" name="pathway" class="text-input" placeholder="Enter pathway" value="./storage" />
+            </div>
+
+            <button type="button" id="apply-settings" class="embossed-button">Apply</button>
+        </div>
+    </div>
+    
+    <script src="crypto.js"></script>
+    <script src="storage.js"></script>
+    <script src="alertModal.js"></script>
+    <script src="setup.js"></script>
+
+</body>
+
+</html>

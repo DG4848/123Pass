@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "123Pass",
+  "version": "1.0",
+  "description": "A password generator extension",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "windows",
+    "scripting",
+    "tabs",
+    "background"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["tooltip.css"],  
+    "run_at": "document_idle",
+    "extension_environment": "isolated_world"
+}],
+  "background": {
+    "service_worker": "background.js"   
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_width": 1000,
+    "default_height": 60,
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
