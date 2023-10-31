@@ -35,16 +35,24 @@
                 <label for="pathway">Pathway:</label>
                 <input type="text" id="pathway" name="pathway" class="text-input" placeholder="Enter pathway" value="./storage" />
             </div>
+            <div class="input-container">
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" class="text-input" placeholder="" title="Put your Email or other Username here for Login" />
+            </div>
 
             <button type="button" id="apply-settings" class="embossed-button">Apply</button>
         </div>
     </div>
-    
-    <script src="crypto.js"></script>
-    <script src="storage.js"></script>
-    <script src="alertModal.js"></script>
-    <script src="setup.js"></script>
+
+    <script type="module" src="setup.js" defer></script>
 
 </body>
+
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
 
 </html>
