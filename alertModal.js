@@ -2,18 +2,29 @@ const modal = document.getElementById("customModal");
 const span = document.getElementById("closeModal");
 
 function showModal(message) {
+    if (!modal) {
+        console.error("Modal not found in the document.");
+        return;
+    }
     document.getElementById("modalMessage").textContent = message;
     modal.style.display = "block";
 }
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
+document.addEventListener('DOMContentLoaded', function() {
+    if (!modal || !span) {
+        console.error("Modal or span not found in the document.");
+        return;
+    }
 
-window.onclick = function(event) {
-    if (event.target === modal) {
+    span.onclick = function() {
         modal.style.display = "none";
     }
-}
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
 
 export { showModal };
