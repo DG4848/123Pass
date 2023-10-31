@@ -13,32 +13,32 @@
     </div>
     <div class="popup-content">
       <div class="input-container password-wrapper">
-        <label for="EasyPass">Your EasyPass:</label>
+        <label for="EasyPass">EasyPass:</label>
         <input type="password" id="EasyPass" name="EasyPass" class="text-input"
                placeholder="**********************" required title="Enter your EasyPass here" autocomplete="new-password" />
         <span class="toggle-password" id="togglePasswordButton" title="Show/Hide Password">&#x1F441;</span>
       </div>
 
-      <button type="button" id="generate-password" class="embossed-button">Generate Password</button>
+      <button type="button" id="generate-password" class="embossed-button">Generate</button>
 
       <div class="input-container">
         <label for="password-length">Length:</label>
-        <input type="number" id="password-length" name="password-length" class="number-input" min="12" max="299" step="1" placeholder="Length (3 digits only)" value="16" required title="Enter a password length between 12 and 299 characters." />      
+        <input type="number" id="password-length" name="password-length" class="number-input" min="8" max="44" step="1" placeholder="Length (3 digits only)" value="16" required title="Enter required password length." />      
       </div>
     
       <div class="popup-setup">
         <a href="options.html" class="setup-gear" title="Go to Settings">&#x2630;</a>
       </div>
       <div class="input-container">
-        <label for="GeneratedPasswordOutput">Generated Password:</label>
-        <input type="text" id="GeneratedPasswordOutput" readonly>
+        <label for="GeneratedPasswordOutput">Generated Pass:</label>
+        <button id="fillCredentials"></button>
     </div>
       <div class="input-container">
         <label for="domain">Domain:</label>
-        <input type="domain" id="domain" name="domain" class="text-input" placeholder="example.com" readonly />
+        <input type="domain" id="domain" name="domain" class="text-input" placeholder="example.com" />
       </div>
       <div class="input-container">
-        <label for="use-domain">Use Domain</label>
+        <label for="use-domain">Use</label>
         <input type="checkbox" id="use-domain" name="use-domain" class="checkbox" checked required title="add this domain to your password"/>
       </div>
 
@@ -46,7 +46,7 @@
 
     </div>
     <script type="module" src="storage.js"></script> 
-    <script src="crypto.js"></script>
+    <script type="module" src="crypto.js"></script>
     <script type="module" src="popup.js"></script>   
 
 </body>
