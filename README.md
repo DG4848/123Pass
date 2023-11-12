@@ -1,4 +1,4 @@
-# 123Pass is a Crome extension for password hardening and managing.
+# 123Pass is a Chrome extension for password hardening and managing.
 
 Never trust your secrets to third parties!
 This extension helps you to create and remember unique and strong password for each resource while remembering only easy to memorize words.
