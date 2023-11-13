@@ -11,7 +11,7 @@ Hitting Generate concatenates EasyPass + Domain + Salt and hash it with SHA256. 
 first symbol will always be a special symbol from the list.
 
 With this easy idea you will always have same result if you use same inputs. This means you do not need to use Cloud storage to keep your passwords. It is enough to 
-remember several words instead. bit mevertheless you will have unique password to each of your domains. You also may use this extension for password generating to your 
+remember several words instead. bit nevertheless you will have unique password to each of your domains. You also may use this extension for password generating to your 
 non-web applications and domains. Simply input some other name instead of Domain initially proposed.
 
 Please ask your questions and share your ideas for improvement.
